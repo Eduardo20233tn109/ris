@@ -7,12 +7,12 @@ public class Documento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nombre_paciente")
-    private String nombrePaciente;
-
     @ManyToOne
     @JoinColumn(name = "id_doctor")
     private Doctor doctor;
+
+    @Column(name = "nombre_paciente")
+    private String nombrePaciente;
 
     private Double mount;
 

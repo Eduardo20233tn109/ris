@@ -1,11 +1,17 @@
 package com.example.RISBONNY.ris.model;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Doctor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @OneToMany(mappedBy = "documento")
+    @JsonIgnore
+    private List<Documento> documentos;
 
     private String nombre;
     private String apellido;
