@@ -1,4 +1,5 @@
 package com.example.RISBONNY.ris.model;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -9,7 +10,7 @@ public class Doctor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "documento")
+    @OneToMany(mappedBy = "doctor")
     @JsonIgnore
     private List<Documento> documentos;
 

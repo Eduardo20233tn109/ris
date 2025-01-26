@@ -1,4 +1,4 @@
-package com.example.RISBONNY.Controller;
+package com.example.RISBONNY.ris.Controller;
 
 import com.example.RISBONNY.ris.model.Turno;
 import org.springframework.beans.factory.annotation.Autowired;

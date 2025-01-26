@@ -1,4 +1,4 @@
-package com.example.RISBONNY.Controller;
+package com.example.RISBONNY.ris.Controller;
 
 import com.example.RISBONNY.ris.model.Documento;
 import com.example.RISBONNY.ris.model.DocumentoRepository;
